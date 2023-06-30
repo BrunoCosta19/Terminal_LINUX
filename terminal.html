@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>TERMINAL</title>
+</head>
+<body>
+
+    <br>
+
+
+
+    <!-- Terminal -->
+    <center>
+    <div class="terminal">
+        <!-- Menu terminal -->
+        <div class="barra">
+            <br>
+            <p style="color: #fff;" class="testee">user@ubuntu: ~</p>
+            <div class="icones">
+                <div class="partleft">
+                    <img src="img/bnt_abas.png" alt="">
+                </div>
+                <div class="partone">
+                    <img src="img/bnt_pesquisa.png" alt="">
+                    <img src="img/bnt_menu.png" alt="">
+                </div>
+                <div class="parttwo">
+                    <img src="img/bnt_minimize.png" alt="" onclick="minimize()">
+                    <img src="img/bnt_maximize.png" alt="" onclick="maximize()">
+                    <img src="img/bnt_close.png" alt="" onclick="inicio()">
+                </div>
+            </div>
+        </div>
+
+        <!-- Código terminal -->
+        <div class="cod">
+            <p>user@ubuntu</p>
+            <p style="color: #fff; margin-left: -1px;">:</p>
+            <p style="color: #6997c7; margin-left: -1px;" id="diretorio">~</p>
+            <p style="color: #fff; margin-left: -1px;">$</p>
+            <input type="text" name="entrada" id="entrada" required  onfocus="this.value='';">
+            <br>
+            <br>
+        </div>
+            <p id="result" class="result" style="color: #fff;"></p>
+    </div>
+
+
+    <br>
+    <header class="cab2">
+        <h3>Biblioteca</h3>
+        <p>Acesse a biblioteca de comandos.</p>
+      </header>
+    <!-- Button biblioteca -->
+    <div class="box-3">
+        <div class="btn btn-two" data-toggle="modal" data-target="#ModalLongoExemplo">
+          <span class="spanbnt"><i class="large material-icons">sd_card</i></span>
+        </div>
+      </div>
+  
+    <!-- Bilioteca -->
+    <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalLongoExemplo">Biblioteca de comandos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <!-- Corpo biblioteca -->
+            <div class="modal-body">
+                <div class="tags">
+                    <p><b>cat</b> - Comando com a função de executar ou criar arquivos</p>
+                </div>
+                <div class="tags">
+                    <p><b>cd</b> - acessa determinado dir, basta escrevermos "cd + [diretório]"</p>
+                </div>
+                <div class="tags">
+                    <p><b>mkdir</b> - Usado para a criação de um diretório, para utiliza-lo basta escrever o comando "mkdir + [Nome do diretório que desejar]". É muito importante ressaltar que o mesmo irá criar a pasta no local onde você está naquele momento, para saber mais sobre como mudar de local basta ver a categoria <b>cd</b></p>
+                </div>
+                <div class="tags">
+                    <p><b>rmdir</b> - Já este utilizamos para excluir os diretórios, o funcionamento é parecido, basta escrever "rmdir + [nome do diretório que desejar excluir]".</p>
+                </div>
+                <div class="tags">
+                    <p><b>echo</b> - Comando que permite mostrarmos uma mensagem na tela por exemplo "echo Hello Word"</p>
+                </div>
+                <div class="tags">
+                    <p><b>ls</b> - Mostra as pastas e arquivos que contém no diretório selecionado</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="copyrigth">
+        <p>Copyright by <a href="">NathanGowacki</a>, <a href="">RyanGavenda</a> and <a href="">JoãoLongo</a>.</p>
+    </div>
+    </center>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+
+
+/* 
+========================
+	  	 BODY
+========================
+*/
+
+html,
+body {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+/* 
+========================
+	BUTTON BASE
+========================
+*/
+
+div[class*=box] {
+	height: 33.33%;
+	width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.btn {
+	line-height: 50px;
+	height: 75px;
+	text-align: center;
+	width: 350px;
+	cursor: pointer;
+}
+
+/* 
+========================
+	  BUTTON ONE
+========================
+*/
+.btn-three {
+	transition: all 0.5s;
+	position: relative;
+  margin-top: 5px;
+}
+.btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.1);
+	transition: all 0.3s;
+}
+.btn-three:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+  color: #fff;
+}
+.btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
+	transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+.btn-three span {
+  font-family: 'Ubuntu Mono', monospace;
+  margin: auto;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* 
+========================
+	  BUTTON TWO
+========================
+*/
+
+.btn-two {
+	transition: all 0.5s;
+	position: relative;
+  margin-top: 5px;
+  width: 100px;
+}
+.btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.1);
+	transition: all 0.3s;
+}
+.btn-two:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+  color: #fff;
+}
+.btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
+	transform: scale(1.2,1.2);
+}
+.btn-two:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+.btn-two span {
+  font-family: 'Ubuntu Mono', monospace;
+  margin: auto;
+  font-size: 20px;
+  color: #fff;
+}
+.btn-two i {
+	font-size: 50px;
+}
+
+/* 
+========================
+        HEADER
+========================
+*/
+
+
+.cab {
+  margin-top: 300px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.cab h3 {
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.cab p {
+  color: rgba(255,255,255,0.5);
+  font-size: 18px;
+}
